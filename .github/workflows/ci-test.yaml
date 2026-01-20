@@ -26,5 +26,6 @@ jobs:
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
 
     - name: Build with Gradle Wrapper
-      run: ./gradlew build # IT'S HERE WHERE COMMIT WILL BE TESTED
-      run: echo "Done"
+      run: |
+        ./gradlew build # IT'S HERE WHERE COMMIT WILL BE TESTED
+        echo "Done"
