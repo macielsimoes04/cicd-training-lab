@@ -4,7 +4,7 @@ public class Main {
     int myNum1 = 50;
     int myNum2 = 100;
 
-    System.out.println(myNum1 + myNum2);
+    System.out.println(myNum1 + myNum21);
   }
 }
 

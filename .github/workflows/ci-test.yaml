@@ -26,10 +26,10 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
 
-    - name: Make gradlew executable
+    - name: Make gradlew executable # PERMISSIONS
       run: chmod +x ./gradlew
 
-    - name: Build with Gradle Wrapper
+    - name: Build with Gradle Wrapper # BUILDS AND DO TESTS
       run: |
-        ./gradlew build # IT'S HERE WHERE COMMIT WILL BE TESTED
+        ./gradlew build
         echo "Done"
