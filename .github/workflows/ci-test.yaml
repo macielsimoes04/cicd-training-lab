@@ -43,6 +43,5 @@ jobs: # WORKFLOW
       with: 
         image: macielsismoes04/test
         registry: docker.io # DEFAULT SERVICE
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/lab:latest  #to create an image it takes username/repository:tag_name
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
