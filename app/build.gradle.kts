@@ -42,3 +42,11 @@ application {
     // Define the main class for the application.
     mainClass = "org.example.Main"
 }
+
+// MANIFEST NEED TO INFORM THE JAR WHAT'S THE MAIN CLASS.
+tasks.jar { 
+    manifest {
+        attributes["Main-Class"] = application.mainClass.get()
+    }
+}
+
