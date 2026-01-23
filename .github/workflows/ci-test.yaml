@@ -42,6 +42,7 @@ jobs: # WORKFLOW
       uses: mr-smithers-excellent/docker-build-push@v6
       with: 
         image: macielsismoes04/test
+        dockerfile: ./Dockerfile  
         registry: docker.io # DEFAULT SERVICE
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
