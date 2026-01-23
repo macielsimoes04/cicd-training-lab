@@ -39,10 +39,11 @@ jobs: # WORKFLOW
 
     steps:
     - name: Build and push
+      run: |
+          echo "PWD:"
+          pwd
       uses: mr-smithers-excellent/docker-build-push@v6
-      run : |
-        echo "PWD:"
-        pwd
+      
       with: 
         image: macielsismoes04/test
         dockerfile: ./Dockerfile  
