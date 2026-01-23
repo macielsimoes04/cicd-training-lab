@@ -48,5 +48,5 @@ jobs: # WORKFLOW
       uses: docker/build-push-action@v6
       with: 
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/cd_test:latest  #to create an image it takes username/image_name:tag_name
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/lab:latest  #to create an image it takes username/repository:tag_name
 
