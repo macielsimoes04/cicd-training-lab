@@ -38,12 +38,16 @@ jobs: # WORKFLOW
     runs-on: ubuntu-latest
 
     steps:
-    - name: Build and push
+
+    - name: Get PWD
       run: |
-          echo "PWD:"
-          pwd
+        echo "PWD:"
+        pwd
+
+
+
+    - name: Build and push
       uses: mr-smithers-excellent/docker-build-push@v6
-      
       with: 
         image: macielsismoes04/test
         dockerfile: ./Dockerfile  
