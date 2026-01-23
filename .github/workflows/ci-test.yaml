@@ -39,5 +39,5 @@ jobs: # WORKFLOW
       with: 
         image: macielsimoes04/lab # REPOSITORY
         registry: docker.io # DEFAULT SERVICE WHERE THE MACHINES ARE STORAGED
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        username: macielsismoes04
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
